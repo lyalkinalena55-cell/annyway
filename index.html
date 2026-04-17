@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnnyWay — Global PR & SMM Agency (Light Premium)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Manrope', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            emerald: '#0b8c8e', /* Blue Diamond - акценты */
+                            dark: '#01191d',    /* Black Slate - текст и структура */
+                            gray: '#f2f2f2',    /* Light Grey - воздух и фон */
+                        }
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                        'breathe': 'breathe 15s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        breathe: {
+                            '0%, 100%': { transform: 'scale(1) translate(0, 0)' },
+                            '50%': { transform: 'scale(1.05) translate(-10px, 10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #f2f2f2;
+            color: #01191d;
+            overflow-x: hidden;
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+        .delay-400 { animation-delay: 400ms; }
+
+        .sharp-edge {
+            border-radius: 0;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col relative selection:bg-brand-emerald selection:text-white">
+
+    <!-- Архитектурный паттерн "А" -->
+    <div class="absolute top-[-5%] left-[-5%] text-[45vw] font-extrabold text-brand-dark/[0.03] leading-none pointer-events-none select-none z-0">
+        A
+    </div>
+
+    <!-- Шапка -->
+    <header class="w-full relative z-20 py-8 px-6 lg:px-16 flex items-center justify-between border-b border-brand-dark/[0.05]">
+        <a href="#" class="flex flex-col leading-none group pl-1">
+            <span class="text-2xl font-extrabold tracking-tight text-brand-dark">AnnyWay</span>
+            <span class="text-[9px] font-bold tracking-[0.2em] text-brand-emerald uppercase mt-1">agency</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-12">
+            <a href="#" class="text-[11px] uppercase tracking-widest font-bold text-brand-dark hover:text-brand-emerald transition-colors">Главная</a>
+            <a href="#" class="text-[11px] uppercase tracking-widest font-bold text-brand-dark/60 hover:text-brand-dark transition-colors">Экспертиза</a>
+            <a href="#" class="text-[11px] uppercase tracking-widest font-bold text-brand-dark/60 hover:text-brand-dark transition-colors">Кейсы</a>
+            <a href="#" class="text-[11px] uppercase tracking-widest font-bold text-brand-dark/60 hover:text-brand-dark transition-colors">Контакты</a>
+        </nav>
+
+        <button class="hidden lg:flex px-6 py-3 border border-brand-dark/20 text-[10px] uppercase tracking-[0.15em] font-bold text-brand-dark hover:border-brand-emerald hover:bg-brand-emerald hover:text-white transition-colors duration-300 sharp-edge">
+            Обсудить проект
+        </button>
+
+        <button class="lg:hidden p-2 text-brand-dark hover:text-brand-emerald transition-colors">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+    </header>
+
+    <!-- БЛОК 1: Hero Section -->
+    <main class="relative z-10 flex flex-col justify-center pt-16 lg:pt-24 pb-16 px-6 lg:px-16">
+        <div class="w-full max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-12 items-center">
+            
+            <div class="lg:col-span-6 xl:col-span-7 flex flex-col order-2 lg:order-1">
+                
+                <div class="inline-flex items-center flex-wrap gap-2 sm:gap-3 mb-8 animate-fade-in-up opacity-0">
+                    <span class="flex h-1.5 w-1.5 relative mr-1">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-emerald opacity-60"></span>
+                        <span class="relative inline-flex rounded-full h-1.5 w-1.5 bg-brand-emerald"></span>
+                    </span>
+                    <span class="text-[9px] sm:text-[11px] uppercase tracking-[0.2em] font-extrabold text-brand-dark/80">
+                        Комплексный маркетинг & PR
+                    </span>
+                    <span class="text-brand-dark/30 hidden sm:inline-block">/</span>
+                    <span class="text-[9px] sm:text-[11px] uppercase tracking-[0.2em] font-bold text-brand-emerald">
+                        США · ОАЭ · Европа
+                    </span>
+                </div>
+
+                <h1 class="text-[2.25rem] sm:text-5xl lg:text-[3.5rem] xl:text-[4rem] font-extrabold leading-[1.05] tracking-tight text-brand-dark mb-6 animate-fade-in-up delay-100 opacity-0">
+                    Системные продажи и <br class="hidden xl:block">международная репутация для <br class="hidden xl:block">
+                    Health & Beauty проектов.
+                </h1>
+
+                <h2 class="text-base sm:text-lg text-brand-dark/70 font-normal leading-relaxed max-w-2xl mb-10 animate-fade-in-up delay-200 opacity-0">
+                    Настраиваем рекламу с первыми заявками за 3–5 дней и публикуем статьи в мировых СМИ для роста доверия к бренду. Прозрачная система сквозной аналитики и полный контроль окупаемости маркетинга.
+                </h2>
+
+                <ul class="flex flex-col gap-5 mb-12 animate-fade-in-up delay-300 opacity-0">
+                    <li class="flex items-start gap-4">
+                        <div class="w-1.5 h-1.5 bg-brand-emerald rounded-full mt-2.5 shrink-0"></div>
+                        <span class="text-brand-dark/80 font-medium text-base sm:text-lg leading-snug">
+                            <strong class="text-brand-emerald font-extrabold text-xl sm:text-2xl mr-1.5">$3,5 млн+</strong> чистой выручки принесли нашим клиентам.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-1.5 h-1.5 bg-brand-emerald rounded-full mt-2.5 shrink-0"></div>
+                        <span class="text-brand-dark/80 font-medium text-base sm:text-lg leading-snug">
+                            <strong class="text-brand-emerald font-extrabold text-xl sm:text-2xl mr-1.5">3 000+</strong> мировых СМИ для продвижения вашего бренда.
+                        </span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <div class="w-1.5 h-1.5 bg-brand-emerald rounded-full mt-2.5 shrink-0"></div>
+                        <span class="text-brand-dark/80 font-medium text-base sm:text-lg leading-snug">
+                            <strong class="text-brand-emerald font-extrabold text-xl sm:text-2xl mr-1.5">Retention Rate 70%:</strong> большинство клиентов выбирают долгосрочное партнерство с нами.
+                        </span>
+                    </li>
+                </ul>
+
+                <div class="animate-fade-in-up delay-400 opacity-0">
+                    <button class="w-full sm:w-auto px-10 py-5 bg-brand-emerald text-white sharp-edge text-[11px] uppercase tracking-[0.2em] font-extrabold hover:bg-brand-dark transition-colors duration-500 flex items-center justify-center gap-4 group shadow-sm">
+                        Получить медиаплан и аудит
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    <p class="text-[11px] font-medium text-brand-dark/50 mt-4 flex items-center gap-2 justify-center sm:justify-start">
+                        <i data-lucide="info" class="w-3.5 h-3.5 text-brand-emerald"></i>
+                        Бесплатно проанализируем ваш проект и рассчитаем стоимость лида
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-6 xl:col-span-5 relative order-1 lg:order-2 animate-fade-in-up delay-200 opacity-0">
+                <div class="relative w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] lg:h-[700px] flex items-center justify-center">
+                    <div class="absolute inset-0 z-0 animate-breathe opacity-[0.15] mix-blend-multiply pointer-events-none scale-110">
+                        <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="AI 3D Abstract" 
+                             class="w-full h-full object-cover filter grayscale contrast-125">
+                        <div class="absolute inset-0 bg-brand-emerald mix-blend-screen opacity-80"></div>
+                    </div>
+
+                    <div class="relative z-10 w-[85%] h-[95%] sharp-edge overflow-hidden bg-brand-gray shadow-[0_20px_60px_-15px_rgba(1,25,29,0.1)] group">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
+                             alt="Анна Жир — CEO AnnyWay" 
+                             class="w-full h-full object-cover object-center filter grayscale-[15%] contrast-[1.05] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out">
+                    </div>
+
+                    <div class="absolute right-0 bottom-10 z-20 flex flex-col gap-1 text-[9px] font-mono text-brand-dark/40 tracking-widest uppercase">
+                        <span>SYS.ON</span>
+                        <span>AI.CORE_90</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w-full max-w-[90rem] mx-auto mt-20 lg:mt-32 pt-10 border-t border-brand-dark/[0.05] animate-fade-in-up delay-400 opacity-0">
+            <p class="text-[10px] font-bold tracking-[0.2em] text-brand-dark/40 uppercase mb-8 text-center lg:text-left">
+                Ваш бренд на страницах ведущих изданий:
+            </p>
+            
+            <div class="flex flex-wrap justify-center lg:justify-between items-center gap-8 lg:gap-12 select-none">
+                <span class="text-2xl sm:text-3xl font-serif font-bold text-brand-dark/30 hover:text-brand-dark transition-colors duration-500 cursor-default">Forbes</span>
+                <span class="text-2xl sm:text-3xl font-sans font-black tracking-tighter text-brand-dark/30 hover:text-brand-dark transition-colors duration-500 cursor-default">Bloomberg</span>
+                <span class="text-2xl sm:text-3xl font-serif font-bold italic text-brand-dark/30 hover:text-brand-dark transition-colors duration-500 cursor-default">Gulf News</span>
+                <span class="text-xl sm:text-2xl font-sans font-bold uppercase tracking-widest text-brand-dark/30 hover:text-brand-dark transition-colors duration-500 cursor-default">Entrepreneur</span>
+                <span class="text-xl sm:text-2xl font-sans font-extrabold tracking-tight text-brand-dark/30 hover:text-brand-dark transition-colors duration-500 cursor-default">BUSINESS INSIDER</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- БЛОК 2: Вызовы рынка (Боли) -->
+    <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20">
+        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+            
+            <div class="lg:col-span-5 flex flex-col lg:sticky lg:top-32">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Вызовы рынка</span>
+                </div>
+                <h2 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
+                    Стратегия лидерства для тех, кто готов стать №1 в своей нише.
+                </h2>
+            </div>
+
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-16">
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">01 //</span>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Рынок перегрет</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">В нишах эстетической медицины, косметологии и SPA вы конкурируете не только качеством, но и бюджетами. Стоимость лида растет, потому что за него борются тысячи игроков. Без сильного бренда и публикаций в СМИ вы платите за лиды в 2–3 раза больше конкурентов с именем.</p>
+                </div>
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">02 //</span>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Трафик без репутации</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Лид из Meta или Google стоит дорого, но не превращается в запись. В этой нише люди доверяют свое тело и здоровье только авторитетам. Если Google молчит о вашем имени, клиент уходит к тому, кто «на слуху». Это прямой слив бюджета.</p>
+                </div>
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">03 //</span>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Зависимость от алгоритмов</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Рекламные кабинеты блокируются, алгоритмы меняются. Если у вас нет устойчивой репутации в независимом медиаполе, ваш бизнес остается уязвимым перед жесткими правилами рекламных площадок.</p>
+                </div>
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
+                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">04 //</span>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Маркетинговый хаос</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Подрядчики присылают отчеты об «охватах» и «кликах», но вы не понимаете, сколько стоит реальный пациент и когда окупятся вложения. Без сквозной аналитики вы не знаете, какой канал приносит прибыль, а какой просто тратит деньги.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 3: Системный маркетинг (Решение) -->
+    <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
+        <div class="max-w-[90rem] mx-auto">
+            
+            <!-- Заголовок блока -->
+            <div class="max-w-4xl mb-16 lg:mb-24">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Как мы работаем</span>
+                </div>
+                <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
+                    Системный маркетинг: превращаем вашу экспертность в измеримую прибыль.
+                </h2>
+            </div>
+
+            <!-- Пошаговый список (Swiss Minimalist List) -->
+            <div class="flex flex-col border-b border-brand-dark/10">
+                
+                <!-- Шаг 1 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
+                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">01</div>
+                    <div class="lg:col-span-4 flex items-center">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">PR в мировых СМИ</h3>
+                    </div>
+                    <div class="lg:col-span-6 flex items-center">
+                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
+                            Мы обеспечиваем выход статей в ведущих изданиях США, ОАЭ и Европы. Это создает статус эксперта и «прогревает» холодный рынок. Когда клиент видит ваше имя в Forbes или Gulf News, доверие к вашему бренду возрастает в разы.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Шаг 2 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
+                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">02</div>
+                    <div class="lg:col-span-4 flex items-center">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">SMM и контент-стратегия</h3>
+                    </div>
+                    <div class="lg:col-span-6 flex items-center">
+                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
+                            Мы превращаем ваши соцсети в инструмент продаж. Это не просто «красивые картинки», а выстроенная воронка через Reels, сторис и смыслы, которые закрывают возражения еще до обращения. Контент работает в связке с рекламой, увеличивая конверсию из клика в подписку и запись.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Шаг 3 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
+                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">03</div>
+                    <div class="lg:col-span-4 flex items-center">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Performance-маркетинг</h3>
+                    </div>
+                    <div class="lg:col-span-6 flex items-center">
+                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
+                            Запускаем рекламные кампании (Meta, Google, TikTok), которые опираются на уже созданную репутацию. Благодаря тому, что бренд на слуху, реклама работает эффективнее: клики дешевле, а доверие к офферу значительно выше.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Шаг 4 -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
+                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">04</div>
+                    <div class="lg:col-span-4 flex items-center">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Оцифровываем каждый шаг</h3>
+                    </div>
+                    <div class="lg:col-span-6 flex items-center">
+                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
+                            Внедряем сквозную аналитику, чтобы вы видели весь путь клиента: от первого касания до записи. Вы точно знаете стоимость привлечения клиента и окупаемость каждого вложенного доллара. Вы управляете маркетингом на основе цифр, а не гипотез.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Шаг 5 (Скорректированный) -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
+                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">05</div>
+                    <div class="lg:col-span-4 flex items-center">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Масштабирование и Retention</h3>
+                    </div>
+                    <div class="lg:col-span-6 flex items-center">
+                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
+                            Когда система отлажена, мы помогаем наращивать объемы без потери качества лидов. В нише Health & Beauty основная прибыль лежит в долгосрочных отношениях, и мы помогаем их выстроить.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
