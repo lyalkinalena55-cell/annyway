@@ -229,85 +229,95 @@
         </div>
     </section>
 
-    <!-- БЛОК 3: Системный маркетинг (Решение) -->
+    <!-- БЛОК 3: Конструктор решений (Модульная сетка) -->
     <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
             <!-- Заголовок блока -->
-            <div class="max-w-4xl mb-16 lg:mb-24">
+            <div class="max-w-4xl mb-16 lg:mb-20">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="w-8 h-[1px] bg-brand-emerald"></span>
-                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Как мы работаем</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Экспертиза</span>
                 </div>
-                <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
-                    Системный маркетинг: превращаем вашу экспертность в измеримую прибыль.
+                <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark mb-6">
+                    Комплексный маркетинг и PR: от точечных задач до системного роста.
                 </h2>
+                <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium max-w-3xl">
+                    Мы закрываем все маркетинговые потребности вашего проекта. Вы можете выбрать конкретное направление или объединить их в единую экосистему для кратного усиления результата.
+                </p>
             </div>
 
-            <!-- Пошаговый список (Swiss Minimalist List) -->
-            <div class="flex flex-col border-b border-brand-dark/10">
+            <!-- Модульная сетка (Bento Grid) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 
-                <!-- Шаг 1 -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
-                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">01</div>
-                    <div class="lg:col-span-4 flex items-center">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">PR в мировых СМИ</h3>
+                <!-- Модуль 1: PR (Флагман, занимает 2 колонки) -->
+                <div class="lg:col-span-2 bg-white border border-brand-dark/5 p-8 lg:p-12 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-8 gap-4">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Global PR в мировых СМИ</h3>
+                        <i data-lucide="globe" class="w-8 h-8 text-brand-emerald/40 group-hover:text-brand-emerald transition-colors shrink-0"></i>
                     </div>
-                    <div class="lg:col-span-6 flex items-center">
-                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
-                            Мы обеспечиваем выход статей в ведущих изданиях США, ОАЭ и Европы. Это создает статус эксперта и «прогревает» холодный рынок. Когда клиент видит ваше имя в Forbes или Gulf News, доверие к вашему бренду возрастает в разы.
+                    <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium mb-8 max-w-2xl">
+                        Создаем фундамент доверия через публикации в Forbes, Bloomberg, Gulf News и других изданиях США, ОАЭ и Европы. Это верификация вашего статуса, которая «прогревает» рынок и позволяет обоснованно держать высокий чек.
+                    </p>
+                    <div class="bg-brand-gray/50 border-l-2 border-brand-emerald p-4 text-sm font-medium text-brand-dark/80 max-w-2xl">
+                        <strong class="text-brand-emerald uppercase tracking-wider text-[10px] block mb-1">Важно:</strong> 
+                        Мы честно скажем, если вам пока рано в PR, и сначала поможем подготовить базу. Мы не продаем услуги ради услуг.
+                    </div>
+                </div>
+
+                <!-- Модуль 2: SMM -->
+                <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-start justify-between mb-6">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark">Strategic SMM</h3>
+                            <i data-lucide="smartphone" class="w-7 h-7 text-brand-emerald/40 group-hover:text-brand-emerald transition-colors"></i>
+                        </div>
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Превращаем соцсети в воронку продаж. Мы не просто делаем «красиво», а упаковываем смыслы в Reels, сторис и посты, которые закрывают возражения клиента еще до его обращения.
                         </p>
                     </div>
                 </div>
 
-                <!-- Шаг 2 -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
-                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">02</div>
-                    <div class="lg:col-span-4 flex items-center">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">SMM и контент-стратегия</h3>
-                    </div>
-                    <div class="lg:col-span-6 flex items-center">
-                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
-                            Мы превращаем ваши соцсети в инструмент продаж. Это не просто «красивые картинки», а выстроенная воронка через Reels, сторис и смыслы, которые закрывают возражения еще до обращения. Контент работает в связке с рекламой, увеличивая конверсию из клика в подписку и запись.
+                <!-- Модуль 3: Performance -->
+                <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-start justify-between mb-6">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark">Performance-маркетинг</h3>
+                            <i data-lucide="target" class="w-7 h-7 text-brand-emerald/40 group-hover:text-brand-emerald transition-colors"></i>
+                        </div>
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Запускаем окупаемую рекламу в Meta, Google и TikTok. Если бренд уже на слуху благодаря PR и соцсетям, реклама работает эффективнее: клики стоят дешевле, а конверсия в запись выше.
                         </p>
                     </div>
                 </div>
 
-                <!-- Шаг 3 -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
-                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">03</div>
-                    <div class="lg:col-span-4 flex items-center">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Performance-маркетинг</h3>
-                    </div>
-                    <div class="lg:col-span-6 flex items-center">
-                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
-                            Запускаем рекламные кампании (Meta, Google, TikTok), которые опираются на уже созданную репутацию. Благодаря тому, что бренд на слуху, реклама работает эффективнее: клики дешевле, а доверие к офферу значительно выше.
+                <!-- Модуль 4: Analytics -->
+                <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-start justify-between mb-6">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark pr-4">Сквозная аналитика</h3>
+                            <i data-lucide="line-chart" class="w-7 h-7 text-brand-emerald/40 group-hover:text-brand-emerald transition-colors shrink-0"></i>
+                        </div>
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Внедряем систему контроля, где вы видите путь клиента от первого клика до оплаты в кассе. Управляем маркетингом на основе цифр и стоимости лида, а не гипотез.
                         </p>
                     </div>
                 </div>
 
-                <!-- Шаг 4 -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
-                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">04</div>
-                    <div class="lg:col-span-4 flex items-center">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Оцифровываем каждый шаг</h3>
-                    </div>
-                    <div class="lg:col-span-6 flex items-center">
-                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
-                            Внедряем сквозную аналитику, чтобы вы видели весь путь клиента: от первого касания до записи. Вы точно знаете стоимость привлечения клиента и окупаемость каждого вложенного доллара. Вы управляете маркетингом на основе цифр, а не гипотез.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Шаг 5 (Скорректированный) -->
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 py-10 lg:py-12 border-t border-brand-dark/10 group hover:bg-white/50 transition-colors duration-500">
-                    <div class="lg:col-span-2 text-brand-dark/10 font-mono text-5xl sm:text-6xl font-light leading-none group-hover:text-brand-emerald transition-colors duration-500">05</div>
-                    <div class="lg:col-span-4 flex items-center">
-                        <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">Масштабирование и Retention</h3>
-                    </div>
-                    <div class="lg:col-span-6 flex items-center">
-                        <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium">
-                            Когда система отлажена, мы помогаем наращивать объемы без потери качества лидов. В нише Health & Beauty основная прибыль лежит в долгосрочных отношениях, и мы помогаем их выстроить.
+                <!-- Модуль 5: Scaling -->
+                <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex flex-col h-full">
+                        <div class="flex items-start justify-between mb-6">
+                            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark pr-4">Управление масштабированием</h3>
+                            <i data-lucide="bar-chart-2" class="w-7 h-7 text-brand-emerald/40 group-hover:text-brand-emerald transition-colors shrink-0"></i>
+                        </div>
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Когда база готова и воронка окупается, мы помогаем наращивать объемы без потери качества заявок, обеспечивая стабильность при росте бюджетов.
                         </p>
                     </div>
                 </div>
