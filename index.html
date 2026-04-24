@@ -151,6 +151,7 @@
 
             </div>
 
+            <!-- Правая часть с фото -->
             <div class="lg:col-span-6 xl:col-span-5 relative order-1 lg:order-2 animate-fade-in-up delay-200 opacity-0">
                 <div class="relative w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] lg:h-[700px] flex items-center justify-center">
                     <div class="absolute inset-0 z-0 animate-breathe opacity-[0.15] mix-blend-multiply pointer-events-none scale-110">
@@ -160,10 +161,18 @@
                         <div class="absolute inset-0 bg-brand-emerald mix-blend-screen opacity-80"></div>
                     </div>
 
+                    <!-- Фото эксперта с плашкой -->
                     <div class="relative z-10 w-[85%] h-[95%] sharp-edge overflow-hidden bg-brand-gray shadow-[0_20px_60px_-15px_rgba(1,25,29,0.1)] group">
                         <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
                              alt="Анна Жир — CEO AnnyWay" 
                              class="w-full h-full object-cover object-center filter grayscale-[15%] contrast-[1.05] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out">
+                        
+                        <!-- Подпись эксперта (Встроена поверх фото) -->
+                        <div class="absolute bottom-0 left-0 bg-white/95 backdrop-blur-md p-5 sm:p-6 z-20 sharp-edge border-t border-r border-brand-dark/5 shadow-xl transition-transform duration-500 transform translate-y-2 group-hover:translate-y-0">
+                            <h4 class="text-brand-dark font-extrabold text-sm sm:text-base leading-none mb-1.5">Анна Жир</h4>
+                            <p class="text-brand-emerald text-[9px] uppercase tracking-[0.15em] font-extrabold mb-3">Основатель AnnyWay</p>
+                            <p class="text-brand-dark/70 text-[11px] font-medium leading-snug">5 лет в маркетинге <br>Health & Beauty</p>
+                        </div>
                     </div>
 
                     <div class="absolute right-0 bottom-10 z-20 flex flex-col gap-1 text-[9px] font-mono text-brand-dark/40 tracking-widest uppercase">
@@ -190,41 +199,66 @@
         </div>
     </main>
 
-    <!-- БЛОК 2: Вызовы рынка (Боли) -->
+    <!-- БЛОК 2: Барьеры роста (Проблема-Решение) -->
     <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
             
             <div class="lg:col-span-5 flex flex-col lg:sticky lg:top-32">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="w-8 h-[1px] bg-brand-emerald"></span>
-                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Вызовы рынка</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Барьеры роста</span>
                 </div>
                 <h2 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
-                    Стратегия лидерства для тех, кто готов стать №1 в своей нише.
+                    Что мешает сильным проектам масштабироваться за рубежом.
                 </h2>
             </div>
 
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-16">
+            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
+                
+                <!-- Барьер 1 -->
                 <div class="flex flex-col border-t border-brand-dark/10 pt-6">
                     <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">01 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Рынок перегрет</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">В нишах эстетической медицины, косметологии и SPA вы конкурируете не только качеством, но и бюджетами. Стоимость лида растет, потому что за него борются тысячи игроков. Без сильного бренда и публикаций в СМИ вы платите за лиды в 2–3 раза больше конкурентов с именем.</p>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Высокая конкуренция на перегретых рынках</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">В нишах эстетической медицины и SPA в США и ОАЭ борьба идет не только за качество услуг, но и за рекламные бюджеты. Стоимость лида постоянно растет из-за плотности игроков.</p>
+                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
+                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
+                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Формирование сильного бренда через авторитетные СМИ. Медийный статус позволяет привлекать лояльных клиентов в 2–3 раза дешевле, чем это обходится конкурентам без «имени».</p>
+                    </div>
                 </div>
+
+                <!-- Барьер 2 -->
                 <div class="flex flex-col border-t border-brand-dark/10 pt-6">
                     <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">02 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Трафик без репутации</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Лид из Meta или Google стоит дорого, но не превращается в запись. В этой нише люди доверяют свое тело и здоровье только авторитетам. Если Google молчит о вашем имени, клиент уходит к тому, кто «на слуху». Это прямой слив бюджета.</p>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Низкая конверсия трафика при отсутствии репутации</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Дорогой лид из Meta или Google часто не превращается в запись, так как в индустрии здоровья и красоты доверие к эксперту является решающим фактором.</p>
+                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
+                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
+                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Создание репутационного фундамента. Публикации в медиа верифицируют авторитет. На фоне сотен предложений клиент выбирает бренд, подтвержденный независимыми источниками.</p>
+                    </div>
                 </div>
+
+                <!-- Барьер 3 -->
                 <div class="flex flex-col border-t border-brand-dark/10 pt-6">
                     <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">03 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Зависимость от алгоритмов</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Рекламные кабинеты блокируются, алгоритмы меняются. Если у вас нет устойчивой репутации в независимом медиаполе, ваш бизнес остается уязвимым перед жесткими правилами рекламных площадок.</p>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Уязвимость перед алгоритмами площадок</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Блокировки кабинетов и смена политик Meta или Google могут парализовать продажи. Зависимость только от одного канала трафика создает риски для стабильности бизнеса.</p>
+                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
+                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
+                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Двухуровневая защита: минимизация рисков за счет глубокого знания политик США и ОАЭ, и создание независимого медийного капитала в СМИ, работающего вне капризов алгоритмов.</p>
+                    </div>
                 </div>
+
+                <!-- Барьер 4 -->
                 <div class="flex flex-col border-t border-brand-dark/10 pt-6">
                     <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">04 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Маркетинговый хаос</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">Подрядчики присылают отчеты об «охватах» и «кликах», но вы не понимаете, сколько стоит реальный пациент и когда окупятся вложения. Без сквозной аналитики вы не знаете, какой канал приносит прибыль, а какой просто тратит деньги.</p>
+                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Маркетинговый хаос и отсутствие цифр</h3>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Отчеты о «кликах» и «охватах» не дают понимания реальной окупаемости. Без контроля стоимости каждого привлеченного пациента невозможно эффективное планирование бюджета.</p>
+                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
+                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
+                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Внедрение сквозной аналитики и оцифровка каждого этапа воронки. Переход к управлению маркетингом на основе данных о прибыли и стоимости лида, а не на основе гипотез.</p>
+                    </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -233,7 +267,6 @@
     <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
-            <!-- Заголовок блока -->
             <div class="max-w-4xl mb-16 lg:mb-20">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="w-8 h-[1px] bg-brand-emerald"></span>
@@ -247,10 +280,8 @@
                 </p>
             </div>
 
-            <!-- Модульная сетка (Bento Grid) -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
                 
-                <!-- Модуль 1: PR (Флагман, занимает 2 колонки) -->
                 <div class="lg:col-span-2 bg-white border border-brand-dark/5 p-8 lg:p-12 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     <div class="flex flex-col sm:flex-row sm:items-start justify-between mb-8 gap-4">
@@ -266,7 +297,6 @@
                     </div>
                 </div>
 
-                <!-- Модуль 2: SMM -->
                 <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     <div class="flex flex-col h-full">
@@ -280,7 +310,6 @@
                     </div>
                 </div>
 
-                <!-- Модуль 3: Performance -->
                 <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     <div class="flex flex-col h-full">
@@ -294,7 +323,6 @@
                     </div>
                 </div>
 
-                <!-- Модуль 4: Analytics -->
                 <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     <div class="flex flex-col h-full">
@@ -308,7 +336,6 @@
                     </div>
                 </div>
 
-                <!-- Модуль 5: Scaling -->
                 <div class="bg-white border border-brand-dark/5 p-8 lg:p-10 hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 group relative overflow-hidden sharp-edge">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
                     <div class="flex flex-col h-full">
@@ -323,6 +350,91 @@
                 </div>
 
             </div>
+        </div>
+    </section>
+
+    <!-- БЛОК 4: Специализация и стандарты -->
+    <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20 border-t border-brand-dark/5">
+        <div class="max-w-[90rem] mx-auto">
+            
+            <div class="flex flex-col lg:flex-row gap-12 lg:gap-24 mb-16 lg:mb-20">
+                <div class="lg:w-1/3">
+                    <div class="flex items-center gap-3 mb-6">
+                        <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                        <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Специализация</span>
+                    </div>
+                    <h2 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
+                        Экспертные ниши и стандарты работы.
+                    </h2>
+                </div>
+                <div class="lg:w-2/3 flex items-end">
+                    <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium max-w-3xl">
+                        Работа ведется только в тех сегментах, где накоплена глубокая экспертиза и есть понимание специфики лицензирования и верификации. В каждой нише возможна как реализация отдельных задач, так и запуск комплексных стратегий.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Сетка ниш -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-12 mb-24">
+                
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Эстетическая медицина и пластическая хирургия</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Обеспечение потока заявок на высокочековые операции. Создание «цифрового следа» эксперта, который сокращает цикл сделки и обосновывает стоимость услуг на рынках США и ОАЭ.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Премиальные SPA и салоны красоты</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Лидогенерация для заполнения записи и позиционирование в категории Luxury. Работа с имиджем, позволяющая выделиться среди конкурентов.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Психологи, нутрициологи и health-коучи</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Привлечение целевой аудитории для частной практики и долгосрочного ведения клиентов.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Образовательные проекты Beauty & Health</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Запуск окупаемых рекламных кампаний для привлечения студентов на онлайн-курсы и программы обучения.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">B2B-медицина и лаборатории</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Продвижение зуботехнических центров и производителей оборудования. Поиск клиник-партнеров через таргет и закрепление статуса лидера рынка в бизнес-СМИ.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Студии татуировки и перманентного макияжа</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Упаковка визуальной стратегии и настройка рекламы на платежеспособную аудиторию. Формирование узнаваемого почерка бренда.</p>
+                </div>
+
+                <div class="flex flex-col border-t border-brand-dark/10 pt-6 group">
+                    <h3 class="text-lg font-extrabold text-brand-dark mb-3 group-hover:text-brand-emerald transition-colors duration-300">Личный бренд для Talent Visa</h3>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">Подготовка доказательной базы публикаций в мировых медиа (Forbes, Bloomberg и др.) для кейсов O-1, EB-1 в США и Golden Visa в ОАЭ.</p>
+                </div>
+
+            </div>
+
+            <!-- Ограничения и стандарты (Контрастный баннер) -->
+            <div class="bg-brand-dark text-white p-8 lg:p-12 sharp-edge relative overflow-hidden shadow-2xl">
+                <!-- Декоративное свечение -->
+                <div class="absolute -top-32 -right-32 w-96 h-96 bg-brand-emerald/20 rounded-full blur-[100px] pointer-events-none"></div>
+                
+                <div class="relative z-10 flex flex-col md:flex-row gap-8 lg:gap-16 items-start md:items-center">
+                    <div class="md:w-1/3 shrink-0">
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-1">Ограничения<br>и стандарты</h3>
+                        <div class="w-12 h-1 bg-brand-emerald mt-5"></div>
+                    </div>
+                    <div class="md:w-2/3 flex flex-col gap-4 border-l border-white/10 pl-0 md:pl-8 lg:pl-16">
+                        <p class="text-brand-emerald text-base sm:text-lg font-extrabold">
+                            Проекты принимаются в работу только при наличии лицензий и научного обоснования.
+                        </p>
+                        <p class="text-white/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Мы <span class="text-white">не рекламируем</span> БАДы, препараты без доказанной эффективности и методы, противоречащие принципам доказательной медицины. Сохранение репутации клиента и агентства — наш абсолютный приоритет.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
