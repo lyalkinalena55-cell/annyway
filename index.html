@@ -56,6 +56,11 @@
         .sharp-edge {
             border-radius: 0;
         }
+        
+        /* Стили для фокуса инпутов */
+        input:focus {
+            outline: none;
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col relative selection:bg-brand-emerald selection:text-white">
@@ -727,7 +732,7 @@
                     </div>
                     <div class="p-8 lg:p-10 flex flex-col flex-grow border-x border-b border-brand-dark/5">
                         <p class="text-brand-dark/80 text-sm sm:text-base leading-relaxed mb-8">
-                            <strong class="text-brand-dark font-extrabold">Задача:</strong> повышение узнаваемости и формирование доверия к бренду хирурга.
+                            <strong class="text-brand-dark font-extrabold">Задача:</strong> повышение узнаваемости и формирование доверия к брен хирурга.
                         </p>
                         <div class="h-[1px] w-full bg-brand-dark/10 mb-8"></div>
                         <p class="text-[11px] font-bold tracking-widest text-brand-dark/40 uppercase mb-6">Результаты за 3 года:</p>
@@ -979,6 +984,89 @@
             </div>
         </div>
     </section>
+
+    <!-- БЛОК 9: Финальный CTA (Форма заявки) -->
+    <section class="w-full bg-brand-dark py-24 lg:py-32 px-6 lg:px-16 relative z-20 overflow-hidden">
+        
+        <!-- Элегантное фоновое свечение -->
+        <div class="absolute bottom-[-20%] left-[-10%] w-[50%] h-[50%] bg-brand-emerald/10 rounded-full blur-[150px] pointer-events-none"></div>
+        <div class="absolute top-[-20%] right-[-10%] w-[40%] h-[40%] bg-brand-emerald/5 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-[90rem] mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
+            
+            <!-- Левая часть: Смыслы и буллиты -->
+            <div class="lg:col-span-6 xl:col-span-7 flex flex-col">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Начать работу</span>
+                </div>
+                
+                <h2 class="text-[2.25rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-white mb-8 [text-wrap:balance]">
+                    Запишитесь на бесплатную стратегическую консультацию с маркетологом
+                </h2>
+                
+                <p class="text-white/70 text-base sm:text-lg leading-relaxed font-medium mb-12 max-w-2xl">
+                    За 30 минут разберём вашу ситуацию и покажем, с чего разумнее начать продвижение в вашей нише, на вашем рынке и с вашим бюджетом.
+                </p>
+
+                <h3 class="text-xl sm:text-2xl font-extrabold text-white mb-8">На консультации:</h3>
+                
+                <ul class="flex flex-col gap-5">
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check" class="w-5 h-5 text-brand-emerald mt-0.5 shrink-0"></i>
+                        <span class="text-white/80 font-medium text-base leading-snug">Разберём, почему реклама, контент или PR сейчас могут не давать нужных заявок.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check" class="w-5 h-5 text-brand-emerald mt-0.5 shrink-0"></i>
+                        <span class="text-white/80 font-medium text-base leading-snug">Определим, какие инструменты подходят вашему проекту: реклама, SMM, PR, аналитика или комплексная связка.</span>
+                    </li>
+                    <li class="flex items-start gap-4">
+                        <i data-lucide="check" class="w-5 h-5 text-brand-emerald mt-0.5 shrink-0"></i>
+                        <span class="text-white/80 font-medium text-base leading-snug">Скажем честно, какого результата можно ожидать, в какие сроки и что нужно усилить перед запуском.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Правая часть: Форма заявки -->
+            <div class="lg:col-span-6 xl:col-span-5 relative">
+                <form class="bg-white/5 border border-white/10 p-8 sm:p-10 lg:p-12 sharp-edge shadow-2xl backdrop-blur-sm flex flex-col gap-5">
+                    
+                    <input type="text" placeholder="Имя" class="w-full bg-white/5 border border-white/10 text-white placeholder-white/40 px-5 py-4 focus:border-brand-emerald focus:bg-white/10 transition-colors sharp-edge text-sm font-medium">
+                    
+                    <input type="text" placeholder="WhatsApp или Telegram" class="w-full bg-white/5 border border-white/10 text-white placeholder-white/40 px-5 py-4 focus:border-brand-emerald focus:bg-white/10 transition-colors sharp-edge text-sm font-medium">
+                    
+                    <input type="text" placeholder="Ниша проекта" class="w-full bg-white/5 border border-white/10 text-white placeholder-white/40 px-5 py-4 focus:border-brand-emerald focus:bg-white/10 transition-colors sharp-edge text-sm font-medium">
+                    
+                    <input type="text" placeholder="Ссылка на сайт или соцсети" class="w-full bg-white/5 border border-white/10 text-white placeholder-white/40 px-5 py-4 focus:border-brand-emerald focus:bg-white/10 transition-colors sharp-edge text-sm font-medium mb-2">
+                    
+                    <button type="button" class="w-full bg-brand-emerald text-white sharp-edge text-[11px] uppercase tracking-[0.2em] font-extrabold hover:bg-white hover:text-brand-dark transition-colors duration-500 flex items-center justify-center gap-3 py-5 mt-2 group">
+                        Получить консультацию
+                        <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                    </button>
+                    
+                    <div class="mt-4 flex items-start gap-3 border-t border-white/10 pt-6">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-brand-emerald shrink-0 mt-0.5"></i>
+                        <p class="text-white/40 text-[10px] sm:text-[11px] leading-relaxed font-medium">
+                            Маркетолог свяжется с вами в течение часа и согласует удобное время для звонка в Zoom. После отправки формы вы получите гайд: “6 ошибок в продвижении Health & Beauty проектов, которые снижают заявки и продажи”.
+                        </p>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Минималистичный Footer -->
+    <footer class="w-full bg-brand-dark border-t border-white/5 py-8 px-6 lg:px-16 relative z-20">
+        <div class="max-w-[90rem] mx-auto flex flex-col sm:flex-row justify-between items-center gap-4">
+            <a href="#" class="flex flex-col leading-none group pl-1">
+                <span class="text-xl font-extrabold tracking-tight text-white">AnnyWay</span>
+            </a>
+            <p class="text-white/30 text-[10px] font-medium tracking-widest uppercase">
+                &copy; 2024 AnnyWay Agency. Все права защищены.
+            </p>
+        </div>
+    </footer>
 
     <script>
         lucide.createIcons();
