@@ -104,7 +104,6 @@
                     </span>
                 </div>
 
-                <!-- Обновленный заголовок H1: whitespace-nowrap не дает Health & Beauty перенестись -->
                 <h1 class="text-4xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark mb-6 animate-fade-in-up delay-100 opacity-0 max-w-4xl [text-wrap:balance]">
                     Комплексный маркетинг и PR в СМИ для <span class="text-brand-emerald whitespace-nowrap">Health & Beauty</span> проектов.
                 </h1>
@@ -201,7 +200,7 @@
         </div>
     </main>
 
-    <!-- БЛОК 2: Барьеры роста (Симметричная сетка 2x2) -->
+    <!-- БЛОК 2: Барьеры роста (Выровненная сетка 2x2) -->
     <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
@@ -217,23 +216,33 @@
                 </h2>
             </div>
 
-            <!-- Сетка из 4-х карточек -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            <!-- Сетка из 4-х карточек со строгим выравниванием внутренних зон -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 items-stretch">
                 
                 <!-- Барьер 1 -->
-                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                <div class="bg-brand-gray/40 p-8 lg:p-10 xl:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                    <div class="flex items-baseline gap-4 mb-6">
-                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">01 //</span>
-                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Похожие предложения на перегретом рынке</h3>
+                    
+                    <!-- Зона 1: Номер и Заголовок -->
+                    <div class="md:min-h-[140px] lg:min-h-[130px] xl:min-h-[110px]">
+                        <span class="block text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors mb-4">01 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight mb-6">
+                            Похожие предложения на перегретом рынке
+                        </h3>
                     </div>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
-                        В медицине, wellness, эстетике и beauty-сегменте клиент видит десятки похожих предложений: “премиальный сервис”, “опытные специалисты”, “индивидуальный подход”, “современные методики”.<br><br>
-                        Если бренд говорит теми же словами, что и конкуренты, его сложно запомнить. Клиент смотрит на репутацию, визуальную подачу, экспертность, отзывы, соцсети и общее ощущение доверия.
-                    </p>
-                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                    
+                    <!-- Зона 2: Основной текст -->
+                    <div class="mb-10">
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            В медицине, wellness, эстетике и beauty-сегменте клиент видит десятки похожих предложений: “премиальный сервис”, “опытные специалисты”, “индивидуальный подход”, “современные методики”.<br><br>
+                            Если бренд говорит теми же словами, что и конкуренты, его сложно запомнить. Клиент смотрит на репутацию, визуальную подачу, экспертность, отзывы, соцсети и общее ощущение доверия.
+                        </p>
+                    </div>
+                    
+                    <!-- Зона 3: Метод AnnyWay -->
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm w-full md:min-h-[260px] lg:min-h-[220px] xl:min-h-[180px]">
                         <div class="flex items-center gap-3 mb-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald shrink-0"></i>
                             <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
                         </div>
                         <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
@@ -243,19 +252,29 @@
                 </div>
 
                 <!-- Барьер 2 -->
-                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                <div class="bg-brand-gray/40 p-8 lg:p-10 xl:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                    <div class="flex items-baseline gap-4 mb-6">
-                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">02 //</span>
-                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Трафик есть, но он не доходит до записи</h3>
+                    
+                    <!-- Зона 1: Номер и Заголовок -->
+                    <div class="md:min-h-[140px] lg:min-h-[130px] xl:min-h-[110px]">
+                        <span class="block text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors mb-4">02 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight mb-6">
+                            Трафик есть, но он не доходит до записи
+                        </h3>
                     </div>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
-                        Дорогой лид из Meta или Google не всегда превращается в клиента. Человек может перейти на сайт, посмотреть соцсети, задать вопрос в директе — и пропасть.<br><br>
-                        Причина не всегда в рекламе. Часто проблема в слабой воронке: непонятный оффер, мало доказательств, неубедительный контент, долгий ответ менеджера или отсутствие следующего шага.
-                    </p>
-                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                    
+                    <!-- Зона 2: Основной текст -->
+                    <div class="mb-10">
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Дорогой лид из Meta или Google не всегда превращается в клиента. Человек может перейти на сайт, посмотреть соцсети, задать вопрос в директе — и пропасть.<br><br>
+                            Причина не всегда в рекламе. Часто проблема в слабой воронке: непонятный оффер, мало доказательств, неубедительный контент, долгий ответ менеджера или отсутствие следующего шага.
+                        </p>
+                    </div>
+                    
+                    <!-- Зона 3: Метод AnnyWay -->
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm w-full md:min-h-[260px] lg:min-h-[220px] xl:min-h-[180px]">
                         <div class="flex items-center gap-3 mb-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald shrink-0"></i>
                             <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
                         </div>
                         <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
@@ -265,19 +284,29 @@
                 </div>
 
                 <!-- Барьер 3 -->
-                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                <div class="bg-brand-gray/40 p-8 lg:p-10 xl:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                    <div class="flex items-baseline gap-4 mb-6">
-                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">03 //</span>
-                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Продажи зависят от алгоритмов</h3>
+                    
+                    <!-- Зона 1: Номер и Заголовок -->
+                    <div class="md:min-h-[140px] lg:min-h-[130px] xl:min-h-[110px]">
+                        <span class="block text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors mb-4">03 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight mb-6">
+                            Продажи зависят от алгоритмов
+                        </h3>
                     </div>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
-                        Рекламные кабинеты блокируются, правила Meta и Google меняются, стоимость заявки растёт. Если весь поток клиентов держится на одном канале, бизнес становится уязвимым.<br><br>
-                        В нишах здоровья и красоты это особенно важно: здесь есть ограничения по формулировкам, визуалам, обещаниям результата и медицинским темам.
-                    </p>
-                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                    
+                    <!-- Зона 2: Основной текст -->
+                    <div class="mb-10">
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Рекламные кабинеты блокируются, правила Meta и Google меняются, стоимость заявки растёт. Если весь поток клиентов держится на одном канале, бизнес становится уязвимым.<br><br>
+                            В нишах здоровья и красоты это особенно важно: здесь есть ограничения по формулировкам, визуалам, обещаниям результата и медицинским темам.
+                        </p>
+                    </div>
+                    
+                    <!-- Зона 3: Метод AnnyWay -->
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm w-full md:min-h-[260px] lg:min-h-[220px] xl:min-h-[180px]">
                         <div class="flex items-center gap-3 mb-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald shrink-0"></i>
                             <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
                         </div>
                         <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
@@ -287,19 +316,29 @@
                 </div>
 
                 <!-- Барьер 4 -->
-                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                <div class="bg-brand-gray/40 p-8 lg:p-10 xl:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
                     <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
-                    <div class="flex items-baseline gap-4 mb-6">
-                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">04 //</span>
-                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Есть отчёты, но нет понимания, что работает</h3>
+                    
+                    <!-- Зона 1: Номер и Заголовок -->
+                    <div class="md:min-h-[140px] lg:min-h-[130px] xl:min-h-[110px]">
+                        <span class="block text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors mb-4">04 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight mb-6">
+                            Есть отчёты, но нет понимания, что работает
+                        </h3>
                     </div>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
-                        Подрядчики присылают клики, охваты и показы, но владелец не понимает, сколько стоит реальный клиент и какой канал приносит деньги.<br><br>
-                        Без сквозной аналитики сложно управлять маркетингом: непонятно, что масштабировать, что менять, а что просто расходует бюджет.
-                    </p>
-                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                    
+                    <!-- Зона 2: Основной текст -->
+                    <div class="mb-10">
+                        <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium">
+                            Подрядчики присылают клики, охваты и показы, но владелец не понимает, сколько стоит реальный клиент и какой канал приносит деньги.<br><br>
+                            Без сквозной аналитики сложно управлять маркетингом: непонятно, что масштабировать, что менять, а что просто расходует бюджет.
+                        </p>
+                    </div>
+                    
+                    <!-- Зона 3: Метод AnnyWay -->
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm w-full md:min-h-[260px] lg:min-h-[220px] xl:min-h-[180px]">
                         <div class="flex items-center gap-3 mb-3">
-                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald shrink-0"></i>
                             <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
                         </div>
                         <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
