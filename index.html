@@ -152,7 +152,7 @@
 
             </div>
 
-            <!-- Правая часть с фото -->
+            <!-- Правая часть с фото (Заглушка) -->
             <div class="lg:col-span-6 xl:col-span-5 relative order-1 lg:order-2 animate-fade-in-up delay-200 opacity-0">
                 <div class="relative w-full max-w-md mx-auto lg:max-w-none aspect-[4/5] lg:h-[700px] flex items-center justify-center">
                     <div class="absolute inset-0 z-0 animate-breathe opacity-[0.15] mix-blend-multiply pointer-events-none scale-110">
@@ -162,11 +162,14 @@
                         <div class="absolute inset-0 bg-brand-emerald mix-blend-screen opacity-80"></div>
                     </div>
 
-                    <!-- Фото эксперта с плашкой -->
+                    <!-- Фото эксперта (Заглушка) с плашкой -->
                     <div class="relative z-10 w-[85%] h-[95%] sharp-edge overflow-hidden bg-brand-gray shadow-[0_20px_60px_-15px_rgba(1,25,29,0.1)] group">
-                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Анна Жир — CEO AnnyWay" 
-                             class="w-full h-full object-cover object-center filter grayscale-[15%] contrast-[1.05] group-hover:grayscale-0 group-hover:scale-[1.03] transition-all duration-700 ease-out">
+                        
+                        <!-- Минималистичная заглушка для фото -->
+                        <div class="w-full h-full bg-[#e2e2e2] flex flex-col items-center justify-center transition-all duration-700 ease-out group-hover:scale-[1.03]">
+                            <i data-lucide="camera" class="w-12 h-12 text-brand-dark/10 mb-3"></i>
+                            <span class="text-[10px] uppercase tracking-widest font-bold text-brand-dark/30">Фото Анны Жир</span>
+                        </div>
                         
                         <!-- Подпись эксперта -->
                         <div class="absolute bottom-0 left-0 bg-white/95 backdrop-blur-md p-5 sm:p-6 z-20 sharp-edge border-t border-r border-brand-dark/5 shadow-xl transition-transform duration-500 transform translate-y-2 group-hover:translate-y-0">
@@ -200,7 +203,7 @@
         </div>
     </main>
 
-    <!-- БЛОК 2: Барьеры роста (Выровненная сетка 2x2) -->
+    <!-- БЛОК 2: Барьеры роста -->
     <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
@@ -351,7 +354,7 @@
         </div>
     </section>
 
-    <!-- БЛОК 3: Конструктор решений (Модульная сетка) -->
+    <!-- БЛОК 3: Конструктор решений -->
     <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
@@ -441,7 +444,7 @@
         </div>
     </section>
 
-    <!-- БЛОК 4: Стратегия и контекст (Темный контрастный блок) -->
+    <!-- БЛОК 4: Стратегия и контекст -->
     <section class="w-full bg-brand-dark py-24 lg:py-32 px-6 lg:px-16 relative z-20 overflow-hidden">
         
         <div class="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-brand-emerald/10 rounded-full blur-[120px] pointer-events-none"></div>
@@ -605,7 +608,7 @@
         </div>
     </section>
 
-    <!-- БЛОК 6: Кейсы и портфолио (Аналитические карточки) -->
+    <!-- БЛОК 6: Кейсы и портфолио -->
     <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
         <div class="max-w-[90rem] mx-auto">
             
@@ -629,21 +632,17 @@
                 
                 <!-- Карточка 1: Контекстная реклама -->
                 <div class="flex flex-col bg-white sharp-edge shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.1)] transition-shadow duration-500">
-                    <!-- Акцентная плашка -->
                     <div class="bg-brand-emerald p-6 text-center">
                         <h3 class="text-white font-extrabold text-lg sm:text-xl tracking-wide">Контекстная реклама</h3>
                     </div>
-                    <!-- Тело карточки -->
                     <div class="p-8 lg:p-10 flex flex-col flex-grow border-x border-b border-brand-dark/5">
                         <p class="text-brand-dark/80 text-sm sm:text-base leading-relaxed mb-8">
                             <strong class="text-brand-dark font-extrabold">Задача:</strong> лидогенерация в нише хирургии со средним чеком $11 757.
                         </p>
-                        
                         <div class="h-[1px] w-full bg-brand-dark/10 mb-8"></div>
                         <p class="text-[11px] font-bold tracking-widest text-brand-dark/40 uppercase mb-6">Показатели за год:</p>
                         
                         <div class="flex flex-col gap-6">
-                            <!-- Метрика -->
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-brand-emerald/10 mt-0.5 shrink-0">
                                     <i data-lucide="dollar-sign" class="w-5 h-5 text-brand-emerald"></i>
@@ -654,7 +653,6 @@
                                     <p class="text-xs text-brand-dark/50 font-medium mt-1">при бюджете $151 269</p>
                                 </div>
                             </div>
-                            <!-- Метрика -->
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-brand-emerald/10 mt-0.5 shrink-0">
                                     <i data-lucide="trending-up" class="w-5 h-5 text-brand-emerald"></i>
@@ -664,7 +662,6 @@
                                     <p class="text-2xl font-extrabold text-brand-dark">1 687%</p>
                                 </div>
                             </div>
-                            <!-- Метрика -->
                             <div class="flex items-start gap-4">
                                 <div class="p-2 bg-brand-emerald/10 mt-0.5 shrink-0">
                                     <i data-lucide="target" class="w-5 h-5 text-brand-emerald"></i>
@@ -687,7 +684,6 @@
                         <p class="text-brand-dark/80 text-sm sm:text-base leading-relaxed mb-8">
                             <strong class="text-brand-dark font-extrabold">Проект:</strong> реализация курсов по исправлению осанки (онлайн-проект Health).
                         </p>
-                        
                         <div class="h-[1px] w-full bg-brand-dark/10 mb-8"></div>
                         <p class="text-[11px] font-bold tracking-widest text-brand-dark/40 uppercase mb-6">Показатели за год:</p>
                         
@@ -733,7 +729,6 @@
                         <p class="text-brand-dark/80 text-sm sm:text-base leading-relaxed mb-8">
                             <strong class="text-brand-dark font-extrabold">Задача:</strong> повышение узнаваемости и формирование доверия к бренду хирурга.
                         </p>
-                        
                         <div class="h-[1px] w-full bg-brand-dark/10 mb-8"></div>
                         <p class="text-[11px] font-bold tracking-widest text-brand-dark/40 uppercase mb-6">Результаты за 3 года:</p>
                         
@@ -774,25 +769,214 @@
 
             </div>
 
-            <!-- Блок CTA (Вынесен в отдельный широкий баннер) -->
+            <!-- Блок CTA -->
             <div class="relative overflow-hidden bg-brand-dark sharp-edge shadow-2xl flex flex-col md:flex-row justify-between items-center p-8 lg:p-16">
                 <div class="absolute top-[-50%] right-[-10%] w-[50%] h-[200%] bg-brand-emerald/20 rounded-full blur-[100px] pointer-events-none"></div>
-                
                 <div class="relative z-10 max-w-xl text-center md:text-left mb-8 md:mb-0">
                     <h3 class="text-2xl sm:text-3xl font-extrabold text-white mb-4">
-                        Хотите стать следующим кейсом?
+                        Хотите понять, какие цифры возможны в вашем проекте?
                     </h3>
                     <p class="text-white/70 text-sm sm:text-base leading-relaxed font-medium">
-                        Оставьте заявку, и мы бесплатно проанализируем ваш проект, подберем стратегию и рассчитаем юнит-экономику.
+                        Оставьте заявку. Разберём вашу нишу, текущий маркетинг и точки роста
                     </p>
                 </div>
-                
                 <button class="px-10 py-5 bg-brand-emerald text-white sharp-edge text-[11px] uppercase tracking-[0.2em] font-extrabold hover:bg-white hover:text-brand-dark transition-colors duration-500 relative z-10 w-full md:w-auto shrink-0 flex items-center justify-center gap-3 group">
                     Обсудить проект
                     <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
                 </button>
             </div>
 
+        </div>
+    </section>
+
+    <!-- БЛОК 7: Команда проекта -->
+    <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20 border-t border-brand-dark/5">
+        <div class="max-w-[90rem] mx-auto">
+            
+            <div class="max-w-4xl mb-16 lg:mb-20">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Команда</span>
+                </div>
+                <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark mb-6">
+                    Кто будет работать над вашим проектом
+                </h2>
+                <p class="text-brand-dark/70 text-base sm:text-lg leading-relaxed font-medium max-w-3xl">
+                    В нишах здоровья, красоты и wellness продвижение влияет не только на заявки, но и на репутацию бренда. Поэтому над проектом работает не один специалист, а команда: стратегия, реклама, контент, PR и аналитика связаны между собой.
+                </p>
+            </div>
+
+            <!-- Карточка Основателя -->
+            <div class="flex flex-col md:flex-row gap-8 lg:gap-12 bg-brand-gray/30 p-8 lg:p-12 border border-brand-dark/5 sharp-edge mb-20 hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.05)] transition-all duration-500">
+                <!-- Заглушка фото Анны -->
+                <div class="w-full md:w-1/3 xl:w-1/4 h-80 shrink-0 bg-[#e2e2e2] flex flex-col items-center justify-center relative overflow-hidden group border border-white/50">
+                    <i data-lucide="camera" class="w-10 h-10 text-brand-dark/10 mb-3 group-hover:scale-110 transition-transform duration-500"></i>
+                    <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Фото Анны Жир</span>
+                </div>
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mb-2">Анна Жир</h3>
+                    <p class="text-brand-emerald text-[11px] uppercase tracking-[0.15em] font-extrabold mb-8">Основатель AnnyWay</p>
+                    <p class="text-brand-dark/80 text-base leading-relaxed font-medium mb-6">
+                        5 лет в маркетинге. Начинала с таргетированной рекламы, работала с SMM и PR, поэтому знает процессы изнутри: от рекламного кабинета и контентной воронки до публикаций в СМИ.
+                    </p>
+                    <p class="text-brand-dark/80 text-base leading-relaxed font-medium">
+                        Анна собрала агентство вокруг Health & Beauty проектов, потому что в этой нише результат зависит не только от трафика. Важно, как бренд выглядит, что говорит, где подтверждает экспертность и насколько аккуратно выстроена его коммуникация.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Заголовок сетки команды -->
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-brand-dark mb-10">С проектом работают:</h3>
+
+            <!-- Сетка специалистов (5 ролей) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 lg:gap-8">
+                
+                <!-- Роль 1 -->
+                <div class="flex flex-col group">
+                    <div class="w-full aspect-[4/5] bg-[#e2e2e2] mb-6 flex flex-col items-center justify-center border border-white/50 overflow-hidden relative">
+                        <i data-lucide="user" class="w-8 h-8 text-brand-dark/10 mb-2 group-hover:scale-110 transition-transform duration-500"></i>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Заглушка фото</span>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brand-dark mb-3 leading-tight">Проджект-<br>маркетолог</h4>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">
+                        Ведёт проект, координирует команду и следит, чтобы реклама, контент, PR и аналитика работали в одной логике.
+                    </p>
+                </div>
+
+                <!-- Роль 2 -->
+                <div class="flex flex-col group">
+                    <div class="w-full aspect-[4/5] bg-[#e2e2e2] mb-6 flex flex-col items-center justify-center border border-white/50 overflow-hidden relative">
+                        <i data-lucide="user" class="w-8 h-8 text-brand-dark/10 mb-2 group-hover:scale-110 transition-transform duration-500"></i>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Заглушка фото</span>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brand-dark mb-3 leading-tight">Специалист<br>по рекламе</h4>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">
+                        Запускает и оптимизирует кампании, отслеживает стоимость заявки, качество лидов и каналы, которые приводят продажи.
+                    </p>
+                </div>
+
+                <!-- Роль 3 -->
+                <div class="flex flex-col group">
+                    <div class="w-full aspect-[4/5] bg-[#e2e2e2] mb-6 flex flex-col items-center justify-center border border-white/50 overflow-hidden relative">
+                        <i data-lucide="user" class="w-8 h-8 text-brand-dark/10 mb-2 group-hover:scale-110 transition-transform duration-500"></i>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Заглушка фото</span>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brand-dark mb-3 leading-tight">SMM-<br>специалист</h4>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">
+                        Упаковывает экспертность в контент: посты, сторис и Reels, которые помогают аудитории понять ценность услуги до обращения.
+                    </p>
+                </div>
+
+                <!-- Роль 4 -->
+                <div class="flex flex-col group">
+                    <div class="w-full aspect-[4/5] bg-[#e2e2e2] mb-6 flex flex-col items-center justify-center border border-white/50 overflow-hidden relative">
+                        <i data-lucide="user" class="w-8 h-8 text-brand-dark/10 mb-2 group-hover:scale-110 transition-transform duration-500"></i>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Заглушка фото</span>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brand-dark mb-3 leading-tight">PR-<br>специалист</h4>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">
+                        Подбирает СМИ, готовит материалы и помогает выстраивать медийное присутствие бренда на выбранном рынке.
+                    </p>
+                </div>
+
+                <!-- Роль 5 -->
+                <div class="flex flex-col group">
+                    <div class="w-full aspect-[4/5] bg-[#e2e2e2] mb-6 flex flex-col items-center justify-center border border-white/50 overflow-hidden relative">
+                        <i data-lucide="user" class="w-8 h-8 text-brand-dark/10 mb-2 group-hover:scale-110 transition-transform duration-500"></i>
+                        <span class="text-[9px] uppercase tracking-widest font-bold text-brand-dark/30">Заглушка фото</span>
+                    </div>
+                    <h4 class="text-lg font-extrabold text-brand-dark mb-3 leading-tight">Маркетолог /<br>аналитик</h4>
+                    <p class="text-brand-dark/70 text-sm leading-relaxed font-medium">
+                        Смотрит на воронку и цифры: где теряются заявки, какие каналы работают, что нужно усилить, а что не стоит масштабировать.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- БЛОК 8: Отзывы клиентов и партнёров -->
+    <section class="w-full bg-brand-gray py-24 lg:py-32 px-6 lg:px-16 relative z-20">
+        <div class="max-w-[90rem] mx-auto">
+            
+            <!-- Заголовок блока -->
+            <div class="flex items-center gap-3 mb-6">
+                <span class="w-8 h-[1px] bg-brand-emerald"></span>
+                <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Репутация</span>
+            </div>
+            <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark mb-16 lg:mb-20">
+                Отзывы клиентов и партнёров
+            </h2>
+
+            <!-- Сетка отзывов (Bento Grid) -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+                
+                <!-- Отзыв 1: Дарья (Видео + Текст) -->
+                <div class="lg:col-span-8 bg-white border border-brand-dark/5 p-6 sm:p-8 lg:p-10 sharp-edge hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 flex flex-col md:flex-row gap-8 lg:gap-10 items-start">
+                    
+                    <!-- Заглушка для видеоотзыва (без лица) -->
+                    <div class="w-full md:w-2/5 shrink-0 aspect-[3/4] md:aspect-[4/5] bg-brand-dark relative group overflow-hidden sharp-edge flex flex-col items-center justify-center border border-brand-dark/10">
+                        <div class="absolute inset-0 bg-brand-emerald/5 mix-blend-screen pointer-events-none"></div>
+                        <i data-lucide="video" class="w-12 h-12 text-white/10 mb-4 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="w-16 h-16 bg-white/10 backdrop-blur-md flex items-center justify-center rounded-full group-hover:bg-brand-emerald group-hover:text-white transition-all duration-300 shadow-xl cursor-pointer relative z-10">
+                            <i data-lucide="play" class="w-6 h-6 text-white ml-1"></i>
+                        </div>
+                        <span class="absolute bottom-6 text-[9px] uppercase tracking-[0.2em] font-bold text-white/30 text-center px-4">Видеоотзыв<br>Дарья</span>
+                    </div>
+
+                    <!-- Текстовая часть отзыва -->
+                    <div class="flex flex-col h-full w-full">
+                        <i data-lucide="quote" class="w-8 h-8 text-brand-emerald/30 mb-5 transform rotate-180"></i>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-4">
+                            С командой Анны AnnyWay я работаю уже около четырёх лет. Последние три года мы вместе ведём проект одного из наиболее известных врачей в своей нише. Команда закрывает таргетированную рекламу и PR в СМИ. Уже более двух лет мы стабильно получаем пациентов на операции стоимостью от $10 000 и закрываем 20+ операций в месяц.
+                        </p>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-4">
+                            Также команда помогла проекту стать узнаваемым на национальном уровне за счёт регулярных публикаций в крупных СМИ.
+                        </p>
+                        <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-8">
+                            Как специалист, который видит рынок изнутри, могу сказать: системно работающая команда с таким результатом — большая редкость. Я вижу, за счёт чего это достигается: глубокая специализация в нише, сильная аналитика и искренняя заинтересованность в результате клиента. На эту команду можно положиться в любом запуске — они выкладываются полностью.
+                        </p>
+                        <div class="mt-auto border-t border-brand-dark/10 pt-6">
+                            <h4 class="text-lg font-extrabold text-brand-dark mb-1">Дарья</h4>
+                            <p class="text-brand-emerald text-[10px] uppercase tracking-widest font-bold">Директор по маркетингу, ментор рекламных агентств</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2: Бабломатор (Только текст) -->
+                <div class="lg:col-span-4 bg-white border border-brand-dark/5 p-6 sm:p-8 lg:p-10 sharp-edge hover:shadow-[0_20px_40px_-15px_rgba(1,25,29,0.05)] transition-all duration-500 flex flex-col h-full">
+                    <i data-lucide="quote" class="w-8 h-8 text-brand-emerald/30 mb-5 transform rotate-180"></i>
+                    <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-4">
+                        Год назад мне порекомендовали команду Анны AnnyWay для таргетированной рекламы. До этого я работала с другим специалистом и никак не могла решить проблему с привлечением платёжеспособных лидов на мой онлайн-курс.
+                    </p>
+                    <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-4">
+                        За год совместной работы мы провели 4 запуска. Каждый стабильно приносил клиентов на сумму от $10 000 до $20 000 за рекламную кампанию длительностью около двух недель. Окупаемость — 1:5 и выше. Команда работает быстро и точно понимает, какие настройки нужны, чтобы привлечь аудиторию, готовую покупать продукт от $3 000.
+                    </p>
+                    <p class="text-brand-dark/80 text-sm leading-relaxed font-medium mb-8">
+                        Отдельно хочу отметить глубокую аналитику. Именно она помогает делать запуски предсказуемыми, а не полагаться на удачу. Я рекомендую команду Анны своим ученикам и знакомым как надёжных специалистов по таргету, которые делают результат — особенно в зарубежных запусках.
+                    </p>
+                    <div class="mt-auto border-t border-brand-dark/10 pt-6">
+                        <h4 class="text-lg font-extrabold text-brand-dark mb-1">Онлайн-школа «Бабломатор»</h4>
+                        <p class="text-brand-emerald text-[10px] uppercase tracking-widest font-bold">EdTech & Health проект</p>
+                    </div>
+                </div>
+
+                <!-- Заглушка для отзыва 3 -->
+                <div class="lg:col-span-6 bg-white/40 border border-brand-dark/10 border-dashed p-6 sm:p-8 lg:p-10 sharp-edge flex flex-col items-center justify-center text-center min-h-[250px] group cursor-default">
+                    <i data-lucide="message-square" class="w-8 h-8 text-brand-dark/10 mb-4 group-hover:text-brand-emerald transition-colors duration-500"></i>
+                    <p class="text-brand-dark/40 text-[11px] font-extrabold uppercase tracking-widest mb-2">Отзыв в процессе подготовки</p>
+                    <p class="text-brand-dark/40 text-sm font-medium">Мы собираем обратную связь и скоро опубликуем её здесь</p>
+                </div>
+
+                <!-- Заглушка для отзыва 4 -->
+                <div class="lg:col-span-6 bg-white/40 border border-brand-dark/10 border-dashed p-6 sm:p-8 lg:p-10 sharp-edge flex flex-col items-center justify-center text-center min-h-[250px] group cursor-default">
+                    <i data-lucide="message-square" class="w-8 h-8 text-brand-dark/10 mb-4 group-hover:text-brand-emerald transition-colors duration-500"></i>
+                    <p class="text-brand-dark/40 text-[11px] font-extrabold uppercase tracking-widest mb-2">Отзыв в процессе подготовки</p>
+                    <p class="text-brand-dark/40 text-sm font-medium">Скоро здесь появится новая история успеха нашего клиента</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
