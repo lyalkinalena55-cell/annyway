@@ -201,59 +201,110 @@
         </div>
     </main>
 
-    <!-- БЛОК 2: Барьеры роста (Проблема-Решение) -->
+    <!-- БЛОК 2: Барьеры роста (Симметричная сетка 2x2) -->
     <section class="w-full bg-white py-24 lg:py-32 px-6 lg:px-16 relative z-20">
-        <div class="max-w-[90rem] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-start">
+        <div class="max-w-[90rem] mx-auto">
             
-            <div class="lg:col-span-5 flex flex-col lg:sticky lg:top-32">
+            <!-- Заголовок на всю ширину -->
+            <div class="max-w-4xl mx-auto text-center mb-16 lg:mb-24 flex flex-col items-center">
                 <div class="flex items-center gap-3 mb-6">
                     <span class="w-8 h-[1px] bg-brand-emerald"></span>
                     <span class="text-[10px] uppercase tracking-[0.2em] font-bold text-brand-emerald">Барьеры роста</span>
+                    <span class="w-8 h-[1px] bg-brand-emerald"></span>
                 </div>
-                <h2 class="text-[2rem] sm:text-4xl lg:text-[2.75rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark">
-                    Что мешает сильным проектам масштабироваться за рубежом.
+                <h2 class="text-[2rem] sm:text-4xl lg:text-[3rem] font-extrabold leading-[1.1] tracking-tight text-brand-dark [text-wrap:balance]">
+                    Где проекты в сфере здоровья и красоты теряют клиентов, доверие аудитории и рекламный бюджет
                 </h2>
             </div>
 
-            <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
+            <!-- Сетка из 4-х карточек -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 
-                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
-                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">01 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Высокая конкуренция на перегретых рынках</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">В нишах эстетической медицины и SPA в США и ОАЭ борьба идет не только за качество услуг, но и за рекламные бюджеты. Стоимость лида постоянно растет из-за плотности игроков.</p>
-                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
-                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
-                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Формирование сильного бренда через авторитетные СМИ. Медийный статус позволяет привлекать лояльных клиентов в 2–3 раза дешевле, чем это обходится конкурентам без «имени».</p>
+                <!-- Барьер 1 -->
+                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">01 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Похожие предложения на перегретом рынке</h3>
+                    </div>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
+                        В медицине, wellness, эстетике и beauty-сегменте клиент видит десятки похожих предложений: “премиальный сервис”, “опытные специалисты”, “индивидуальный подход”, “современные методики”.<br><br>
+                        Если бренд говорит теми же словами, что и конкуренты, его сложно запомнить. Клиент смотрит на репутацию, визуальную подачу, экспертность, отзывы, соцсети и общее ощущение доверия.
+                    </p>
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
+                            Упаковываем экспертность проекта в понятное позиционирование, контент и рекламу. Через СМИ и другие точки контакта выстраиваем репутацию, которая помогает клиенту быстрее довериться бренду.
+                        </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
-                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">02 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Низкая конверсия трафика при отсутствии репутации</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Дорогой лид из Meta или Google часто не превращается в запись, так как в индустрии здоровья и красоты доверие к эксперту является решающим фактором.</p>
-                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
-                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
-                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Создание репутационного фундамента. Публикации в медиа верифицируют авторитет. На фоне сотен предложений клиент выбирает бренд, подтвержденный независимыми источниками.</p>
+                <!-- Барьер 2 -->
+                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">02 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Трафик есть, но он не доходит до записи</h3>
+                    </div>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
+                        Дорогой лид из Meta или Google не всегда превращается в клиента. Человек может перейти на сайт, посмотреть соцсети, задать вопрос в директе — и пропасть.<br><br>
+                        Причина не всегда в рекламе. Часто проблема в слабой воронке: непонятный оффер, мало доказательств, неубедительный контент, долгий ответ менеджера или отсутствие следующего шага.
+                    </p>
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
+                            Выстраиваем путь клиента целиком: от первого касания до заявки, записи или покупки. Усиливаем сайт, соцсети, рекламные связки, ретаргетинг и точки контакта, чтобы трафик не терялся после клика.
+                        </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
-                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">03 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Уязвимость перед алгоритмами площадок</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Блокировки кабинетов и смена политик Meta или Google могут парализовать продажи. Зависимость только от одного канала трафика создает риски для стабильности бизнеса.</p>
-                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
-                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
-                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Двухуровневая защита: минимизация рисков за счет глубокого знания политик США и ОАЭ, и создание независимого медийного капитала в СМИ, работающего вне капризов алгоритмов.</p>
+                <!-- Барьер 3 -->
+                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">03 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Продажи зависят от алгоритмов</h3>
+                    </div>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
+                        Рекламные кабинеты блокируются, правила Meta и Google меняются, стоимость заявки растёт. Если весь поток клиентов держится на одном канале, бизнес становится уязвимым.<br><br>
+                        В нишах здоровья и красоты это особенно важно: здесь есть ограничения по формулировкам, визуалам, обещаниям результата и медицинским темам.
+                    </p>
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
+                            Работаем с учётом правил рекламных площадок и особенностей рынков США, ОАЭ и Европы. Параллельно усиливаем бренд через СМИ, контент и поисковую выдачу, чтобы доверие не зависело только от рекламы.
+                        </p>
                     </div>
                 </div>
 
-                <div class="flex flex-col border-t border-brand-dark/10 pt-6">
-                    <span class="text-[11px] font-mono font-bold tracking-widest text-brand-emerald mb-4">04 //</span>
-                    <h3 class="text-xl font-extrabold text-brand-dark mb-4">Маркетинговый хаос и отсутствие цифр</h3>
-                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-6">Отчеты о «кликах» и «охватах» не дают понимания реальной окупаемости. Без контроля стоимости каждого привлеченного пациента невозможно эффективное планирование бюджета.</p>
-                    <div class="mt-auto bg-brand-gray/50 border-l-2 border-brand-emerald p-4 lg:p-5">
-                        <strong class="text-brand-dark text-[11px] uppercase tracking-wider block mb-2">Метод AnnyWay:</strong>
-                        <p class="text-brand-dark/80 text-sm font-medium leading-relaxed">Внедрение сквозной аналитики и оцифровка каждого этапа воронки. Переход к управлению маркетингом на основе данных о прибыли и стоимости лида, а не на основе гипотез.</p>
+                <!-- Барьер 4 -->
+                <div class="bg-brand-gray/40 p-8 lg:p-12 border border-brand-dark/5 sharp-edge flex flex-col h-full hover:bg-white hover:shadow-[0_20px_60px_-15px_rgba(1,25,29,0.08)] transition-all duration-500 group relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-brand-emerald transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
+                    <div class="flex items-baseline gap-4 mb-6">
+                        <span class="text-xl lg:text-2xl font-mono font-bold text-brand-emerald/40 group-hover:text-brand-emerald transition-colors">04 //</span>
+                        <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark leading-tight">Есть отчёты, но нет понимания, что работает</h3>
+                    </div>
+                    <p class="text-brand-dark/70 text-sm sm:text-base leading-relaxed font-medium mb-10">
+                        Подрядчики присылают клики, охваты и показы, но владелец не понимает, сколько стоит реальный клиент и какой канал приносит деньги.<br><br>
+                        Без сквозной аналитики сложно управлять маркетингом: непонятно, что масштабировать, что менять, а что просто расходует бюджет.
+                    </p>
+                    <div class="mt-auto bg-white border-l-2 border-brand-emerald p-6 lg:p-8 sharp-edge shadow-sm">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i data-lucide="check-circle-2" class="w-5 h-5 text-brand-emerald"></i>
+                            <strong class="text-brand-dark text-[10px] uppercase tracking-[0.15em]">Метод AnnyWay</strong>
+                        </div>
+                        <p class="text-brand-dark/80 text-sm sm:text-base font-medium leading-relaxed">
+                            Внедряем сквозную аналитику и оцифровываем каждый шаг воронки. Вы видите, какие каналы приносят результат, и управляете маркетингом на основе цифр.
+                        </p>
                     </div>
                 </div>
 
@@ -390,7 +441,7 @@
                 <div class="flex flex-col border-t border-white/10 pt-6 group">
                     <h3 class="text-xl font-extrabold text-white mb-4 group-hover:text-brand-emerald transition-colors duration-300">Попадание в реальный контекст</h3>
                     <p class="text-white/70 text-sm sm:text-base leading-relaxed font-medium">
-                        Создание маркетинга, который вписан в повседневную жизнь клиента, а не просто транслирует рекламу «в пустоту». Это позволяет бренду выглядеть органично и вызывать доверие на новом рынке.
+                        Создание маркетинга, который вписан в повседнев жизнь клиента, а не просто транслирует рекламу «в пустоту». Это позволяет бренду выглядеть органично и вызывать доверие на новом рынке.
                     </p>
                 </div>
 
@@ -403,7 +454,7 @@
 
             </div>
 
-            <!-- Результативность подхода (Добавленный блок цифр) -->
+            <!-- Результативность подхода -->
             <div class="mt-20 lg:mt-24 pt-16 border-t border-white/10">
                 <p class="text-[10px] font-bold tracking-[0.2em] text-brand-emerald uppercase mb-10 text-center lg:text-left">
                     Результативность подхода в цифрах:
